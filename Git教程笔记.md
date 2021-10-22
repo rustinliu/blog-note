@@ -35,6 +35,12 @@ git config --global core.autocrlf input
 
 `git add 路径` 标记那些变动是需要提交的，相对以及绝对路径均可，以及.和*
 
++ 当被跟踪的文件里面有不想跟踪的文件时，可以使用命令git rm删除文件或者跟踪，使用方法如下：
+
+  + `git rm --cached readme1.txt `   删除readme1.txt的跟踪，并保留在本地。
+
+  + `git rm --f readme1.txt`    删除readme1.txt的跟踪，并且删除本地文件。
+
 .gitignore文件用于标记哪些变动是不需要提交的
 
 `git commit -m 字符串` 提交，字符串为理由，字符串里面如果有空格，最好用引号包起来
@@ -94,4 +100,7 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 source ~/.bashrc				 			 			 			 			 			 			 			 			 			 			 			 			 			 			 			 			 			 			 			 		
 ```
 
- 
+## 其他一些记录的问题
+
+* ZSH默认不显示GIT分支，安装ohmyzsh可解决，[Home · ohmyzsh/ohmyzsh Wiki (github.com)](https://github.com/ohmyzsh/ohmyzsh/wiki)
+
