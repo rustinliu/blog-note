@@ -97,8 +97,3 @@
 ## 其他问题
 
 安装http-sever来打开文件，[http-server的安装和使用 - 简书 (jianshu.com)](https://www.jianshu.com/p/b9f043a2ba94) http-server -c-1(简写hs -c-1)无缓存打开
-
-
-
-
-
