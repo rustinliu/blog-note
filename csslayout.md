@@ -134,4 +134,6 @@
 
   一维布局用flex，二维布局用gird
 
-  * 
+  grid布局目前还在普及中，可以参考阮一峰的这篇教程：[CSS Grid 网格布局教程 - 阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+
+
