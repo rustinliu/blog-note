@@ -135,5 +135,25 @@
   一维布局用flex，二维布局用gird
 
   grid布局目前还在普及中，可以参考阮一峰的这篇教程：[CSS Grid 网格布局教程 - 阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+  
+* 定位
 
+  布局是屏幕平面上的，定位是**垂直于屏幕**的
+
+  * position:
+    * Static 静态，是默认值
+    * relative 相对定位，不脱离文档流
+    * absolute 绝对定位，脱离文档流，相对于祖先元素中第一个position不是static的元素
+    * fixed 固定定位，相对于视口定位（有问题，比如加了在此元素使用transform之后就不好使了），同时**在移动端尽量不要用fixed属性**
+    * sticky 粘滞定位，类似V2ex评论框
+  * index
+    * ![pic3](pic3.png)
+
+* **层叠上下文**
+
+  * [层叠上下文 - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context) 
+
+  * ![pic4](pic4.png)
+
+    
 
