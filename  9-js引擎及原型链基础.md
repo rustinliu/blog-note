@@ -30,9 +30,9 @@
 
 * 内存分配
 
-  > ![pic11](pic11.png)
+  > ![pic11](images/pic11.png)
   >
-  > ![pic12](pic12.png)
+  > ![pic12](images/pic12.png)
   >
   > 数据分为两种：对象和非对象
   >
@@ -42,5 +42,5 @@
 
 ## 原型链
 
-![pic13](pic13.png)很熟悉了，直接上图
+![pic13](images/pic13.png)很熟悉了，直接上图
 

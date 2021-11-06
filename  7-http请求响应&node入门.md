@@ -64,7 +64,7 @@
 
   * -d 'content' or --data 'content'
 
-  ![pic9](pic9.png)
+  ![pic9](images/pic9.png)
 
-  ![pic10](pic10.png)
+  ![pic10](images/pic10.png)
 

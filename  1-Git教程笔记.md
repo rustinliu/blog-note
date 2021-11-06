@@ -78,7 +78,7 @@ git config --global core.autocrlf input
 * `git remote add origin git@XXXX` 在本地仓库添加远程仓库地址，Origin是远程仓库的默认名称，可以改但是没必要，自己的仓库使用SSH不使用HTTP会方便一点
 * `git push -u origin master` 推送本地maste分支到远程origin的master分支，-u只在初次设置时使用，以后可以直接使用`git push ` `git pull`
 * 复制代码使用`git clone git@XXX.git`  
-  * <img src="pic1.png" alt="pic1" style="zoom:50%;" />
+  * <img src="images/pic1.png" alt="pic1" style="zoom:50%;" />
 
 ## 使用bash alisa简化命令
 

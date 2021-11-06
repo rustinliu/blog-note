@@ -6,7 +6,7 @@
 
 * 将两棵树合并成一棵渲染树（render tree）
 
-  ![pic5](pic5.png)
+  ![pic5](images/pic5.png)
 
 * LAYOUT布局（文档流、盒模型、计算大小和位置）
 
@@ -16,7 +16,7 @@
 
 * 三种更新方式
 
-  ![pic6](pic6.png)
+  ![pic6](images/pic6.png)
 
   1. 例如div.remove()全部走一遍
 
@@ -30,7 +30,7 @@
 
   5. 关于CSS动画的优化，详见：[坚持仅合成器的属性和管理层计数  | Web  | Google Developers](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count#管理层并避免层数激增)
   
-     ![pic7](pic7.png)
+     ![pic7](images/pic7.png)
 
 ## transform
 
@@ -62,7 +62,7 @@ inline元素不支持transform，需要先转成block，具体语法可以直接
 
 * 如果有两次过渡怎么办？
 
-  ![pic8](pic8.png)
+  ![pic8](images/pic8.png)
 
 ## animation
 

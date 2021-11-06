@@ -15,7 +15,7 @@
 
 ## 选择布局方式
 
-![图解](pic2.png)
+![图解](images/pic2.png)
 
 * float布局
 
@@ -147,13 +147,13 @@
     * fixed 固定定位，相对于视口定位（有问题，比如加了在此元素使用transform之后就不好使了），同时**在移动端尽量不要用fixed属性**
     * sticky 粘滞定位，类似V2ex评论框
   * index
-    * ![pic3](pic3.png)
+    * ![pic3](images/pic3.png)
 
 * **层叠上下文**
 
   * [层叠上下文 - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context) 
 
-  * ![pic4](pic4.png)
+  * ![pic4](images/pic4.png)
 
     
 
