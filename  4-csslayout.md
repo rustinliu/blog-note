@@ -152,8 +152,14 @@
 * **层叠上下文**
 
   * [层叠上下文 - CSS（层叠样式表） | MDN (mozilla.org)](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context) 
-
   * ![pic4](images/pic4.png)
-
-    
-
+  
+  * 简单记录几个目前遇到的会产生层叠上下文的条件
+    * 根元素<html>
+    * position为absolute或者relative且z-index不为0
+    * position为fixed或者sticky
+    * flex以及grid的子元素，且index不为0
+    * opacity小于1
+    * 设置有如下属性的元素
+      * filter
+      * transform
