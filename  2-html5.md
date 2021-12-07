@@ -45,9 +45,9 @@
       * 网址
         * http://www.google.com
         * Https://www.google.com
-        * //www.google.com 无协议打开,建议使用此方式
+        * **//www.google.com 无协议打开,建议使用此方式**
       * 路径
-        * a/b/c 开启服务器后注意此时根目录为开启文件夹
+        * **a/b/c 开启服务器后注意此时根目录为开启服务的文件夹**
       * 伪协议
         * javascript:代码  现在使用的主要是javascripte:;
         * #id 跳转到指定id位置

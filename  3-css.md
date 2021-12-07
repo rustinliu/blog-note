@@ -18,14 +18,19 @@
 
   @charset "UTF-8";
 
-  @import url(2.css);  这个是CSS语法
+  @import url("2.css");  这个是CSS语法
 
+  * @import "2.css"; 与@import url("2.css");一样
+  * 最后的分号必不可少
+  * 必须放在CSS文件开头
+  * 效率一般，没有JS模块快和灵活，所以用的比较少
+  
   @media(min-width:100px) and (max-width:200px) {
-
+  
   语法一
-
+  
   }
-
+  
   * @charset必须放在第一行
   * 前两个at语法必须以;结束
   * charset是字符集，但UTF-8是字符编码encoding，这是历史遗留问题，这里确定的是 **文件编码**
