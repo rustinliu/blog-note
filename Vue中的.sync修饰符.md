@@ -36,4 +36,56 @@
 * ` <my-comp :foo="bar" v-on:update:foo="bar=@event"></my-comp>`中的`@event`即为子组件自定义事件第二个传入的参数，这里的@event不用加`this`
 * `<my-comp :foo.sync="bar"></my-comp>`其实就是` <my-comp :foo="bar" v-on:update:foo="bar=@event"></my-comp>`的简写，也就是所谓的语法糖，表达的含义是完全相同的
 
-以上就是对`.sync`的功能用法的简单讲解。
+以上就是对`.sync`的功能用法的简单讲解,在Vue3中我们可以是使用v-model来实现类似功能。
+
+## vue2中v-model实现.sync
+
+`v-model`是 Vue2 中唯一支持双向绑定的指令，用于表单控件绑定，但不代表它只能用在表单控件之上。在文档 [使用自定义事件的表单输入组件](https://link.jianshu.com?t=https%3A%2F%2Fcn.vuejs.org%2Fv2%2Fguide%2Fcomponents.html%23%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A1%A8%E5%8D%95%E8%BE%93%E5%85%A5%E7%BB%84%E4%BB%B6%23%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A1%A8%E5%8D%95%E8%BE%93%E5%85%A5%E7%BB%84%E4%BB%B6) 一节中提到了，`v-model`其实是个语法糖。
+
+
+
+```js
+<input v-model="something">
+```
+
+这不过是以下示例的语法糖：
+
+```js
+<input v-bind:value="something"  v-on:input="something = $event.target.value">
+//简写：<input :value="something"  @input="something = $event.target.value">
+```
+
+也就是说，你只需要在组件中声明一个name为value的props，并且通过触发input事件传入一个值，就能修改这个value。改写示例如下：
+
+<div id="app">
+    <div>{{bar}}</div>
+    <my-comp v-model="bar"></my-comp>
+    <!-- <my-comp :foo="bar" v-on:update:foo="bar=@event"></my-comp> -->
+</div>
+<script>
+    Vue.component('my-comp', {
+        template: '<div @click="handleInput">点我+1</div>',
+        data: function() {
+            return {copyValue: this.value}
+        },
+        props: ['value'],
+        methods: {
+            handleInput: function() {
+                this.$emit('input', ++this.copyValue); //发布自定义事件
+            }
+        }
+    });
+    new Vue({
+        el: '#app',
+        data: {bar: 0}
+    });
+</script>
+
+
+
+
+
+## vue3中v-model实现.sync
+
+先见此篇：[v-model | Vue.js (vuejs.org)](https://v3.cn.vuejs.org/guide/migration/v-model.html#概览)
+
